@@ -798,14 +798,14 @@ body {
 }
 
 .sessao h2 {
-    font-size: 2.2em;
+    font-size: 2.2em; /* Tamanho padrão para desktop */
     color: #64ffda;
     margin-bottom: 20px;
     animation: fadeInUp 0.8s ease-in-out;
 }
 
 .sessao p {
-    font-size: 1.1em;
+    font-size: 1.1em; /* Tamanho padrão para desktop */
     line-height: 1.6;
     margin-bottom: 15px;
     color: #f0f0f0;
@@ -833,11 +833,35 @@ body {
     }
 }
 
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .sessao h2 {
+        font-size: 1.8em; /* Tamanho reduzido em telas menores */
+    }
+
+    .sessao p {
+        font-size: 1em; /* Tamanho reduzido em telas menores */
+        margin-bottom: 10px; /* Reduzir a margem para mais espaço em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao h2 {
+        font-size: 1.5em; /* Tamanho ainda mais reduzido em telas pequenas */
+    }
+
+    .sessao p {
+        font-size: 0.9em; /* Tamanho ainda mais reduzido em telas pequenas */
+    }
+}
+
+
 
 
 
 
 /* Habilidades */
+/* Estilos para a seção Habilidades */
 .sessao ul {
     list-style-type: none;
     padding: 0;
@@ -852,7 +876,7 @@ body {
     padding: 12px 15px;
     margin-bottom: 10px;
     color: #f0f0f0;
-    font-size: 1em;
+    font-size: 1em; /* Tamanho padrão para desktop */
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -871,7 +895,7 @@ body {
 .sessao ul li:nth-child(9) { animation-delay: 1.8s; }
 
 .sessao h2 {
-    font-size: 2.2em;
+    font-size: 2.2em; /* Tamanho padrão para desktop */
     color: #64ffda;
     margin-bottom: 20px;
     text-align: center;
@@ -893,15 +917,23 @@ body {
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .sessao ul li {
-        font-size: 0.9em;
-        padding: 10px;
+        font-size: 0.9em; /* Tamanho reduzido em telas menores */
+        padding: 10px; /* Ajustando o padding */
+    }
+
+    .sessao h2 {
+        font-size: 1.8em; /* Tamanho do título ajustado para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .sessao ul li {
-        font-size: 0.85em;
-        padding: 8px;
+        font-size: 0.85em; /* Tamanho ainda mais reduzido em telas pequenas */
+        padding: 8px; /* Ajustando o padding */
+    }
+
+    .sessao h2 {
+        font-size: 1.5em; /* Tamanho do título ajustado para telas muito pequenas */
     }
 }
 
@@ -1014,6 +1046,7 @@ body {
 
 
 
+
 /* Projetos */
 .projetos {
     text-align: center;
@@ -1021,7 +1054,7 @@ body {
 }
 
 .projetos h2 {
-    font-size: 2em;
+    font-size: 2em; /* Tamanho padrão para desktop */
     color: #64ffda;
     margin-bottom: 30px;
 }
@@ -1031,14 +1064,14 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 800px; /* Largura máxima do cartão do projeto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
 }
 
 .projeto h3 {
     color: #f0f0f0;
-    font-size: 1.5em;
+    font-size: 1.5em; /* Tamanho padrão para o título do projeto */
     margin-bottom: 15px;
 }
 
@@ -1051,7 +1084,7 @@ body {
 .projeto a {
     display: inline-block;
     margin: 10px 10px 0;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Padding padrão */
     text-decoration: none;
     color: #121212;
     background-color: #64ffda;
@@ -1075,31 +1108,44 @@ body {
 /* Responsividade */
 @media (max-width: 768px) {
     .projetos h2 {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Tamanho do título ajustado */
+    }
+
+    .projeto {
+        padding: 15px; /* Reduzindo o padding em telas menores */
     }
 
     .projeto h3 {
-        font-size: 1.4em;
+        font-size: 1.4em; /* Tamanho do título do projeto ajustado */
+    }
+
+    .projeto a {
+        padding: 8px 16px; /* Ajuste no padding dos botões */
     }
 }
 
 @media (max-width: 480px) {
     .projetos {
-        padding: 20px 10px;
+        padding: 20px 10px; /* Ajustando o padding geral */
+    }
+
+    .projetos h2 {
+        font-size: 1.5em; /* Tamanho do título ajustado */
     }
 
     .projeto h3 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Tamanho do título do projeto ajustado */
     }
 
     .projeto p {
-        font-size: 0.95em;
+        font-size: 0.95em; /* Tamanho do parágrafo ajustado */
     }
 
     .projeto a {
-        padding: 8px 16px;
+        padding: 8px 12px; /* Ajustando o padding dos botões */
     }
 }
+
 
 
 
