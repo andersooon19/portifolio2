@@ -61,6 +61,8 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar ul li {
@@ -430,7 +432,37 @@ body {
     nav ul li {
         margin: 10px 0; /* Espaço entre os itens do menu */
     }
+
+    /* Ajuste de padding e alinhamento da barra de navegação */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    /* Alinhamento vertical do menu */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 8px 0; /* Espaço entre os itens */
+        width: 100%;
+    }
+
+    /* Links centralizados e largura total para melhorar a aparência */
+    .navbar ul li a {
+        padding: 12px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.1em; /* Tamanho ligeiramente maior para legibilidade */
+    }
 }
+
 
 /* Ajustes adicionais para responsividade */
 @media (max-width: 480px) {
@@ -445,6 +477,15 @@ body {
     .botao-contato {
         padding: 8px 15px; /* Ajusta o padding do botão */
         font-size: 1em; /* Ajusta o tamanho da fonte do botão */
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 1em; /* Ajuste de tamanho para telas menores */
+        padding: 10px;
     }
 }
 
