@@ -793,7 +793,7 @@ body {
 .sessao {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 120px 20px 20px; /* Aumenta o padding superior para evitar sobreposição */
     text-align: center;
 }
 
@@ -846,6 +846,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .sessao {
+        padding: 100px 10px 20px; /* Ajuste o padding superior para evitar sobreposição */
+    }
+
     .sessao h2 {
         font-size: 1.5em; /* Tamanho ainda mais reduzido em telas pequenas */
     }
@@ -1004,12 +1008,16 @@ body {
 
 /* Responsividade para o menu de navegação */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
     .navbar ul li {
-        margin: 0 10px;
+        margin: 0 5px;
     }
 
     .navbar ul li a {
-        padding: 6px;
+        padding: 8px;
     }
 
     .logo p {
@@ -1021,7 +1029,7 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .navbar ul {
@@ -1050,7 +1058,7 @@ body {
 /* Projetos */
 .projetos {
     text-align: center;
-    padding: 40px 20px;
+    padding: 120px 20px 20px; /* Aumenta o padding superior para evitar sobreposição */
 }
 
 .projetos h2 {
