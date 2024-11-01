@@ -869,7 +869,7 @@ body {
 .sessao {
     max-width: 800px;
     margin: 0 auto;
-    padding: 100px 20px 20px; /* Aumente o padding superior para evitar sobreposição */
+    padding: 120px 20px 20px; /* Aumente o padding superior para evitar sobreposição */
     text-align: center; /* Adiciona centralização do texto para a seção */
 }
 
@@ -928,7 +928,7 @@ body {
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
     .sessao {
-        padding: 150px 20px 20px; /* Padding superior para evitar sobreposição */
+        padding: 170px 20px 20px; /* Padding superior para evitar sobreposição */
     }
 
     .sessao ul li {
@@ -943,7 +943,7 @@ body {
 
 @media (max-width: 480px) {
     .sessao {
-        padding: 150px 20px 20px; /* Padding superior para evitar sobreposição */
+        padding: 180px 20px 20px; /* Padding superior para evitar sobreposição */
     }
 
     .sessao ul li {
@@ -1149,7 +1149,7 @@ body {
 
 @media (max-width: 480px) {
     .projetos {
-        padding: 130px 20px 20px; /* Ajustando o padding geral */
+        padding: 180px 20px 20px; /* Ajustando o padding geral */
     }
 
     .projetos h2 {
@@ -1251,3 +1251,4 @@ body {
     transform: scale(1.05); /* Leve aumento ao passar o mouse */
     box-shadow: 0px 4px 10px rgba(100, 255, 218, 0.5); /* Sombra igual aos botões do menu */
 }
+
