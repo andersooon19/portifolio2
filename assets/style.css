@@ -1,0 +1,1142 @@
+/* INICIO */
+
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #f0f0f0; /* Cor do texto clara */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para a barra de navegação superior */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #64ffda; /* Linha azul fina na parte inferior */
+}
+
+/* Estilo para o logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #64ffda; /* Borda da imagem em cor destaque */
+}
+
+.logo p {
+    font-size: 1.5em;
+    color: #ffffff; /* Nome em branco */
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Estilos para o menu de navegação */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+/* Estilo para os itens do menu de navegação */
+.navbar ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 8px; /* Bordas um pouco menos arredondadas */
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    font-weight: bold;
+    border: 1px solid #64ffda; /* Adiciona borda aos links */
+}
+
+/* Efeito hover nos botões */
+.navbar ul li a:hover {
+    background-color: #64ffda;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(100, 255, 218, 0.5);
+}
+
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: slideIn 1s ease-out 0.2s forwards; /* Animação de deslizamento */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de deslizamento para o título */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Começa acima */
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1; /* Termina visível */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda; /* Cor sólida do fundo */
+    color: #121212; /* Texto escuro para contraste */
+    padding: 10px 20px; /* Padding confortável */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px; /* Espaço acima do botão */
+    font-weight: bold; /* Texto em negrito */
+    transition: all 0.3s ease; /* Transições suaves para todos os efeitos */
+    box-shadow: 0 4px 10px rgba(100, 255, 218, 0.5); /* Sombra suave */
+    border: none; /* Remove a borda padrão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    color: #121212; /* Texto escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho do botão */
+    box-shadow: 0 8px 30px rgba(100, 255, 218, 0.5); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Efeito de foco no botão */
+.botao-contato:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(100, 255, 218, 1); /* Sombra de foco mais intensa */
+}
+
+/* Efeito ativo no botão */
+.botao-contato:active {
+    transform: scale(0.98); /* Leve diminuição no tamanho ao clicar */
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2); /* Sombra reduzida ao clicar */
+}
+
+
+
+
+
+/* Estilos para o conteúdo principal */
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.introducao h2 {
+    color: #64ffda;
+    font-size: 2em;
+    animation: fadeIn 1s ease-out; /* Animação de entrada */
+}
+
+.introducao h1 {
+    color: #f0f0f0;
+    font-size: 2.5em;
+    line-height: 1.2;
+    animation: bounceIn 1s ease-out forwards; /* Animação de entrada */
+}
+
+.introducao span {
+    color: #64ffda;
+}
+
+/* Efeito de piscar para a barra */
+.cursor {
+    display: inline-block;
+    color: #64ffda; /* Cor da barra igual ao texto */
+    animation: blink 1s steps(1) infinite; /* Animação de piscar */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+
+/* Animação de entrada mais atraente */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0); /* Começa invisível */
+        opacity: 0; /* Começa invisível */
+    }
+    50% {
+        transform: scale(1.2); /* Cresce um pouco para dar um efeito de rebote */
+        opacity: 1; /* Torna-se visível */
+    }
+    100% {
+        transform: scale(1); /* Retorna ao tamanho normal */
+    }
+}
+
+/* Estilo para o botão "Entre em contato!" */
+.botao-contato {
+    display: inline-block;
+    background-color: #64ffda;
+    color: #121212;
+    padding: 12px 24px; /* Aumenta o padding para um botão maior */
+    text-decoration: none;
+    border-radius: 8px; /* Bordas ligeiramente arredondadas */
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Inclui transform na transição */
+    border: 1px solid #64ffda;
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.5); /* Sombra padrão do botão */
+}
+
+/* Efeito hover no botão */
+.botao-contato:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #121212; /* Texto preto */
+    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.7); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para o Footer */
+.footer {
+    background-color: #1e1e1e; /* Cor de fundo do footer */
+    color: #ffffff; /* Cor do texto do footer */
+    text-align: center; /* Centraliza o texto do footer */
+    padding: 20px 0; /* Espaçamento no footer */
+    border-top: 2px solid #64ffda; /* Linha azul fina na parte superior */
+}
+
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        padding: 6px;
+    }
+
+    .logo p {
+        font-size: 1.2em;
+    }
+
+    .logo span {
+        font-size: 0.9em;
+    }
+
+    .introducao h2 {
+        font-size: 1.8em;
+    }
+
+    .introducao h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .conteudo-principal {
+        padding: 80px 10px;
+    }
+
+    .img-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .introducao h1 {
+        font-size: 1.8em;
+    }
+
+    .introducao h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+/* SOBRE */
+
+/* Estilos para a seção Sobre Mim */
+.sessao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sessao h2 {
+    font-size: 2.2em;
+    color: #64ffda;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.sessao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.sessao p:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.sessao p:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Animação suave de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Habilidades */
+.sessao ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.sessao ul li {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+    font-size: 1em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.sessao ul li:nth-child(1) { animation-delay: 0.2s; }
+.sessao ul li:nth-child(2) { animation-delay: 0.4s; }
+.sessao ul li:nth-child(3) { animation-delay: 0.6s; }
+.sessao ul li:nth-child(4) { animation-delay: 0.8s; }
+.sessao ul li:nth-child(5) { animation-delay: 1s; }
+.sessao ul li:nth-child(6) { animation-delay: 1.2s; }
+.sessao ul li:nth-child(7) { animation-delay: 1.4s; }
+.sessao ul li:nth-child(8) { animation-delay: 1.6s; }
+.sessao ul li:nth-child(9) { animation-delay: 1.8s; }
+
+.sessao h2 {
+    font-size: 2.2em;
+    color: #64ffda;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Animação fadeInUp para uma entrada suave */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .sessao ul li {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao ul li {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+}
+
+/* Estilos consistentes para o menu de navegação */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 8px; /* Bordas arredondadas consistentes */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navbar ul li a:hover {
+    background-color: #64ffda;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(100, 255, 218, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #64ffda;
+}
+
+.logo p {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 0.9em;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Responsividade para o menu de navegação */
+@media (max-width: 768px) {
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        padding: 6px;
+    }
+
+    .logo p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Projetos */
+.projetos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.projetos h2 {
+    font-size: 2em;
+    color: #64ffda;
+    margin-bottom: 30px;
+}
+
+.projeto {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.projeto h3 {
+    color: #f0f0f0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.projeto p {
+    color: #cfcfcf;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin: 10px 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #121212;
+    background-color: #64ffda;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.projeto a:hover {
+    background-color: #f0f0f0;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(100, 255, 218, 0.5);
+}
+
+/* Efeito de hover no cartão do projeto */
+.projeto:hover {
+    transform: scale(1.03);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projetos h2 {
+        font-size: 1.8em;
+    }
+
+    .projeto h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos {
+        padding: 20px 10px;
+    }
+
+    .projeto h3 {
+        font-size: 1.2em;
+    }
+
+    .projeto p {
+        font-size: 0.95em;
+    }
+
+    .projeto a {
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+/* contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #f0f0f0;
+}
+
+.titulo-contato {
+    font-size: 2.5em;
+    color: #64ffda;
+    margin-bottom: 20px;
+}
+
+.informacoes-contato {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.informacoes-contato p {
+    margin: 10px 0;
+}
+
+.informacoes-contato span {
+    color: #64ffda;
+    font-weight: bold;
+}
+
+
+
+/* Responsividade para a seção de contato */
+@media (max-width: 768px) {
+    .titulo-contato {
+        font-size: 2em;
+    }
+    
+    .informacoes-contato {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-contato {
+        font-size: 1.8em;
+    }
+    
+    .informacoes-contato {
+        font-size: 0.9em;
+    }
+}
+
+/* Estilo para os botões de redes sociais na seção de contato */
+.botao-rede-social {
+    display: inline-block;
+    color: #ffffff; /* Cor do texto igual à navegação */
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin: 10px;
+    border: 2px solid #64ffda; /* Borda igual ao estilo anterior */
+}
+
+.botao-rede-social:hover {
+    background-color: #64ffda; /* Cor de fundo ao passar o mouse */
+    color: #121212; /* Cor do texto em hover - preto */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0px 4px 10px rgba(100, 255, 218, 0.5); /* Sombra igual aos botões do menu */
+}
