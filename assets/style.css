@@ -866,6 +866,13 @@ body {
 
 /* Habilidades */
 /* Estilos para a seção Habilidades */
+.sessao {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 20px 20px; /* Aumente o padding superior para evitar sobreposição */
+    text-align: center; /* Adiciona centralização do texto para a seção */
+}
+
 .sessao ul {
     list-style-type: none;
     padding: 0;
