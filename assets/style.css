@@ -410,6 +410,44 @@ body {
     padding: 100px 20px;
 }
 
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .barra-lateral {
+        width: 100%; /* Ocupa toda a largura da tela */
+        position: relative; /* Relativo para evitar sobreposição */
+        height: auto; /* Altura automática para ajuste */
+    }
+
+    .conteudo-principal {
+        padding-top: 80px; /* Ajuste o padding superior para telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens da nav em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaço entre os itens do menu */
+    }
+}
+
+/* Ajustes adicionais para responsividade */
+@media (max-width: 480px) {
+    .introducao h1 {
+        font-size: 1.8em; /* Reduz o tamanho da fonte em telas muito pequenas */
+    }
+    
+    .introducao h2 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte em telas muito pequenas */
+    }
+
+    .botao-contato {
+        padding: 8px 15px; /* Ajusta o padding do botão */
+        font-size: 1em; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
 .introducao h2 {
     color: #64ffda;
     font-size: 2em;
