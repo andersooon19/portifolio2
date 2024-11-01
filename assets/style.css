@@ -920,6 +920,10 @@ body {
 
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
+    .sessao {
+        padding: 120px 20px 20px; /* Padding superior para evitar sobreposição */
+    }
+
     .sessao ul li {
         font-size: 0.9em; /* Tamanho reduzido em telas menores */
         padding: 10px; /* Ajustando o padding */
@@ -931,6 +935,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .sessao {
+        padding: 120px 20px 20px; /* Padding superior para evitar sobreposição */
+    }
+
     .sessao ul li {
         font-size: 0.85em; /* Tamanho ainda mais reduzido em telas pequenas */
         padding: 8px; /* Ajustando o padding */
@@ -1134,11 +1142,15 @@ body {
 
 @media (max-width: 480px) {
     .projetos {
-        padding: 20px 10px; /* Ajustando o padding geral */
+        padding: 100px 10px 20px; /* Ajustando o padding geral */
     }
 
     .projetos h2 {
         font-size: 1.5em; /* Tamanho do título ajustado */
+    }
+
+    .projeto {
+        margin: 10px auto; /* Reduzindo a margem para melhorar a disposição em telas pequenas */
     }
 
     .projeto h3 {
